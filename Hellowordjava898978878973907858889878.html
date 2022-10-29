@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .page-nav ul {
+display : flex;
+flex-wrap : wrap;
+border-top : 1px solid #ddd;
+border-right : 1px solid #ddd;
+list-style-type : none;
+margin : 0;
+padding : 0;
+}
+
+li a:hover  {
+    color: #eee;
+    background-color: #00FFFF;
+}
+
+
+.page-nav li {
+flex : 1 1 50%;
+display : flex;
+border-bottom : 1px solid #ddd;
+border-left : 1px solid #ddd;
+font-family : 'DM Sans', sans-serif;
+font-family : 'Inter', sans-serif;
+}
+.page-nav a {
+padding : 15px 10px;
+display : flex;
+text-decoration : none;
+align-items : center;
+justify-content : center;
+flex : 1 1 auto;
+transition : all 0.2s ease;
+}
+.page-nav a:link {
+background : purple;
+background : #70328F;
+background : #4CC9F0;
+color : whitesmoke;
+}
+.page-nav a:visited {
+font-family : 'Anton', sans-serif, Georgia, 'Times New Roman', Times, serif;
+font-family : 'Libre Baskerville', sans-serif, Georgia, 'Times New Roman', Times, serif;
+font-family : 'Inter', sans-serif;
+font-family : 'DM Sans', sans-serif;
+background : rgb(139, 60, 136);
+background : #70328F;
+/*background : #4CC9F0;*/
+color : whitesmoke;
+}
+.page-nav a:hover {
+background : #eee;
+color : #000;
+}
+.page-nav a:hover {
+background : #F2F4FD;
+color : #624158;
+}
+.page-nav a:active {
+background : #00FFFF;
+color : #000094;
+}
+.page-nav li {
+flex : 1 1 25%;
+}
+
+.pop {
+
+    background-color: #4CC9F0;
+    color:#ddd;
+}
+
+.pop a:hover{
+    background-color: aqua;
+    color: #eee;
+
+}
+
+form {
+    background-color: #70328F;
+}
+
+.headerss {
+    font-size:5rem;
+    font-weight: 900;
+}
+
+
+.input {
+           border:none;
+           font-size:10px;
+       }
+       .input:focus{
+
+           outline:none;
+       }
+
+.styletable{
+   /* background-color: #70328F;*/
+    border-top: ;
+  box-sizing: border-box;
+  flex : 1 1 50%;
+display : flex;
+border-bottom : 5px solid blue;
+border-left : 5px solid blue;
+}
+
+.sop {
+
+    color: #4CC9F0;
+    text-decoration-color: #70328F;
+}
+
+.color {
+
+color:#000094;
+font-size:medium;
+text-decoration-color: #70328F;
+}
+
+.coltime{
+
+    color: #000094;
+}
+
+.borders{
+    /*border-width: 1000px;*/
+    border-top: #70328F;
+    border-bottom: #70328F;
+    border-top: ;
+  box-sizing: border-box;
+  flex : 1 1 50%;
+display : flex;
+border-top: 2.5px solid purple;
+border-bottom : 2.5px solid blue;
+border-left : 2.5px solid purple;
+}
+
+
+
+
+  /* ---------- CALENDAR ---------- */
+ 
+.calendar {
+  text-align: center;
+  justify-content: center;
+}
+ 
+.calendar header {
+  position: relative;
+}
+ 
+.calendar h2 {
+  text-transform: uppercase;
+  /*display: flex;*/
+  min-width:350px;
+  max-width:1850;
+}
+ 
+.calendar thead {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+ 
+.calendar tbody {
+  color:blue);
+}
+ 
+.calendar tbody td:hover {
+  border: 2px solid #00addf;
+}
+ 
+.calendar td {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  width: 4em;
+}
+ 
+.calendar .prev-month,
+.calendar .next-month {
+  color: #cbd1d2;
+}
+ 
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+  border: 2px solid #cbd1d2;
+}
+ 
+.current-day {
+  background: #00addf;
+  color: #f9f9f9;
+}
+ 
+.event {
+  cursor: pointer;
+  position: relative;
+}
+ 
+.event:after {
+  background: #00addf;
+  border-radius: 50%;
+  bottom: 0.5em;
+  display: block;
+  content: "";
+  height: 0.5em;
+  left: 50%;
+  margin: -0.25em 0 0 -0.25em;
+  position: absolute;
+  width: 0.5em;
+}
+ 
+.event.current-day:after {
+  background: #f9f9f9;
+}
+ 
+
+.btn-prev,
+.btn-next {
+  border: 2px solid #cbd1d2;
+  border-radius: 50%;
+  color: #cbd1d2;
+  height: 2em;
+  font-size: 0.75em;
+  line-height: 2em;
+  margin: -1em;
+  position: absolute;
+  top: 50%;
+  width: 2em;
+}
+ 
+.btn-prev:hover,
+.btn-next:hover {
+  background: #cbd1d2;
+  color: #f9f9f9;
+}
+ 
+.btn-prev {
+  left: 6em;
+}
+ 
+.btn-next {
+  right: 6em;
+}
+
+.decorate-time{
+  background-color: #70328F;
+}
+
+
+.bords{
+    
+    /*background: #00addf;*/
+  /*border-radius: 50%;*/
+ 
+  /*box-sizing: border-box;*/
+  color: #cbd1d2;
+  flex : 1 1 50%;
+display :inline-flexbox;
+background-color: #00FFFF;
+border-radius: 30px;
+border-top: 2.5px solid purple;
+border-bottom : 3.5px solid blue;
+border-left : 3.5px solid purple;
+border-width: 15px;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+
+a {
+   
+   color: white ;
+   /*background-color: #000094;*/
+   text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: #37559d;
+}
+
+a {
+  color: #5165ff;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background: #f2f3ff;
+  outline: none;
+  cursor: pointer;
+}
+
+td {
+  border: 2px solid #ccd2ff;
+  position: relative;
+  padding: 18px;
+}
+
+</style>
+</head>
+  <nav class="page-nav">
+    <ul>
+         <li class="gate"><a href="#about">About Me</a></li>
+        <li><a href="#work">C. S. Venkatakrishnan & Barclays</a></li>
+        <li><a href="#images">Image Gallery</a></li>
+        <li><a href="#Times">Times in Different time zones</a></li>
+        <li> <a href="#aboutBarclays" >Some statistics and prehistorcal data about Barclays</a> </li>
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+
+    <h1 class="headerss"><Strong>Timesheet Management Barclays</Strong></h1>
+
+    <img src="images/R48f91cccb16557591c48b443e0e84745.jpg  " width="1000" height="150"  alt="This is an imag of Barclays Logo">
+    
+        
+    </nav>
+  
+  <nav>
+    <ul>
+      <li class="help"> Timeshet table</li>
+      <li> Names </li>
+    </ul>
+  </nav>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type = "text/javascript">
+ 
+     
+
+
+
+
+
+
+
+/*document.getElementById("demo").innerHTML = cars;*/
+        
+           function sayHello() {
+              alert("Hello World")
+              //alert(cars)
+           }
+        //-->
+
+
+     </script> 
+     <script type="text/javascript">
+        function createTable(num_rows, numcols)
+        {
+            var num_rows = document.tablegen.rows.value;
+            var num_cols = document.tablegen.cols.value;
+            var theader = '<table>\n';
+            var tbody = '';
+        
+            for( var i=0; i<num_rows;i++)
+            {
+                // create each row
+                tbody += '<tr>';
+        
+            for( var j=0; j<num_cols;j++)
+            {
+                // create cell
+                tbody += '<td>';
+                tbody += 'Cell ' + i + ',' + j;
+                tbody += '</td>'
+            }
+        
+            // closing row table
+            tbody += '</tr>\n';
+        
+            }
+        
+            var tfooter = '</table>';
+        
+            // TO DO
+        
+            return theader + tbody + tfooter;
+        }
+        </script>
+        
+        <script type="text/javascript">
+        function tableCreate() {
+            const body = document.body,
+            tbl = document.createElement('table');
+            tbl.style.width = '1000px';
+            tbl.style.border = '5px solid blue';
+          
+            for (let i = 0; i < 1; i++) {
+              const tr = tbl.insertRow();
+              //const tc = tbl.insertCol();
+              for (let j = 0; j < 1; j++) {
+                  //const tc=tbl.insertcol();
+                if (/*i === 0 && j === 0*/  i==0 && j == 1) {
+
+                   // const textNode1 = document.createTextNode("Hello World");
+                   // h1.append(textNode1);
+                   // const textNode1 = document.createTextNode("Hello World");
+                   
+                    const textNode2=document.createTextNode("Cell  TUESDAY GTIS ");
+                    tr.append(textNode2)
+                    //tr.append();
+                    
+                    //tr.append(document.createTextNode("cell Tuesday"));
+                    
+                    
+              
+                    //if (i === 0 && j === 1)
+                    tr.appendChild(document.createTextNode(`Cell  Monday I${i}/J${j}`));
+                   //tc.appendChild(document.createTextNode(`Cell  Barclays I${i}/J${j}`));
+                    //tc.
+              
+              
+            
+                
+                 // tr.appendChild(document.createTextNode(`Cell  Tuesday I${i}/J${j}`));}
+
+                  break;
+                } 
+                if (i === 0 && j === 0) {
+                  
+                  tr.appendChild(document.createTextNode(`Cell  Monday :sending I${i}/J${j}`));}
+            
+                  if (i === 0 && j === 1){
+                  tr.appendChild(document.createTextNode(`Cell Tuesday: Sending Out Communicatio ELMO list Distribution I${i}/J${j}`));
+            
+            
+          
+              
+               // tr.appendChild(document.createTextNode(`Cell  Tuesday I${i}/J${j}`));}
+
+                break;
+              } 
+                
+                else {
+                  const td = tr.insertCell();
+                  tr.appendChild(document.createTextNode(`Cell  alan is the best I${i}/J${j}`));
+                  tr.appendChild(document.createTextNode(`Cell  Tuesday I${i}/J${j}`));
+                  tr.appendChild(document.createTextNode(`Cell  wednesday I${i}/J${j}`));
+                  td.appendChild(document.createTextNode(`Cell Monday  Tuesday I${i}/J${j}`));
+                  //td.appendChild(document.createTextNode(`Cell  Tuesady I${i}/J${j}`));
+                  td.appendChild(document.createTextNode(`Cell  Wednesday Thursday Friday  I${i}/J${j}`));
+                  tr.appendChild(document.createTextNode(`Cell  Tuesday I${i}/J${j}`));
+                  
+                  td.appendChild(document.createTextNode(`Cell Monday  , Cell Tuesday I${i}/J${j}`));
+                  //td.appendChild(document.createTextNode(`Cell  Tuesady I${i}/J${j}`));
+                  //td.appendChild(document.createTextNode(`Cell  Wednesday Thursday Friday  I${i}/J${j}`));
+                  tr.appendChild(document.createTextNode(`Cell  Wednesday I${i}/J${j}`));
+
+                  tr.appendChild(document.createTextNode(`Cell  Friday I${i}/J${j}`));
+                  tr.appendChild(document.createTextNode(`Cell   Saurday I${i}/J${j}`));
+                  
+                  td.style.border = '1px solid black';
+                  if (i === 1 && j === 1) {
+                    td.setAttribute('rowSpan', '3');
+                  }
+                }
+              }
+            }
+            body.appendChild(tbl);
+          }
+          
+          tableCreate();
+        </script>
+            
+
+<input name="TableBarclays" type="button" value="Create Tables!" onclick='tableCreate();'/>
+
+<form name="tablegens">
+    <label>Rows: <input type="text" name="rows"/></label><br />
+    <label>Cols: <input type="text" name="cols"/></label><br/>
+    <label>Rows: <input type="text" name="rows"/></label><br />
+    <label>Cols: <input type="text" name="cols"/></label><br/>
+    <input name="generates" type="button" value="Create Tables!" onclick='tableCreate();'/>
+    </form>
+<script>
+document.write(tableCreate());
+            </script>
+    
+    <section id="Times" class="about-me">
+        <div class="container-content">
+
+            <h2>About Me</h2>
+    <title><Strong>Alan Pang Higher Technolgy Apprenticship</Strong></title>
+
+<nav>
+  <ul>
+    <li class="help"> Timeshet table</li>
+    <li> Names </li>
+  </ul>
+</nav>
+    <img src="images/Barclays_logo">
+    
+    <h1><Strong>Timesheet Managment Barclays</Strong></h1>
+
+    <img src="images/R48f91cccb16557591c48b443e0e84745.jpg  " width="1000" height="100"  alt="This is an imag of Barclays Logo">"please click here"</a>"
+    
+    <h2> Creating Tabele with entry values</h2>
+
+    <form name="tablegen">
+        <label>Rows: <input type="Names" name="rows"/></label><br />
+        <label>Cols: <input type="account" name="cols"/></label><br/>
+        <input name="generate" type="button" value="Create Table!" onclick='createTable();'/>
+        </form>
+        <script type="text/javascript">
+        document.write(createTable());
+        </script>
+
+
+
+
+    
+    <img src="images/R48f91cccb16557591c48b443e0e84745.jpg  " width="500" height="50"  alt="This is an imag of Barclays Logo">"please click here"</a>"
+    
+
+    <!--<html>-->
+     
+
+       
+  
+      <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+      <input type="buttons" onclick = "arrays() " value="arrays" />
+      <input type="buttons" onclick = "arrayss() " value="arrayss" />
+   <p id="demo"></p>
+   <p id="email"></p>
+   <p id="firstname"></p>
+   <p id="age"></p>
+
+<section>
+
+<script> 
+function arrayss(){
+    alert("You are in table charts")
+
+const names=new Array("Names","Alan ","Jessica","John","Nathan", "Jason","Chris");
+const age=new Array( "age",36, 53, 18,19,20,30,55 );
+
+document.getElementById("email").innerHTML=names
+document.getElementById("age").innerHTML=age;
+document.getElementById("firstName").value;   
+Submitted = "true";
+if (firstName.length > 10) {
+    alert("The name must have no more than 10 characters");  
+    Submitted = "false";
+}
+if (isNaN(age) || age < 12 || age > 100) {  
+    alert("The age must be between numbers 12 and 100");  
+    Submitted = "false";
+}
+if (at == -1) {  
+    alert("The email address you entered is not valid"); 
+    Submitted = "false";
+}
+if (Submitted == "false") {  
+    return false;
+}
+}
+</script>
+    
+   <script>
+    function arrays() {
+              alert("Hello World")
+              //alert(cars)
+           
+    const cars = new Array("Saab", "Volvo", "BMW");
+    document.getElementById("demo").innerHTML = cars;
+   // alert(cars)
+
+    }
+    </script>
+<!--</html>-->
+<table>
+  <tbody>
+    <tr id="row-1">
+      <td>One</td>
+      <td>Two</td>
+      <td>Three</td>
+      <td>Four</td>
+      <td>
+        <a href="#link">Link</a>
+      </td>
+    </tr>
+    <tr id="row-2">
+      <td>One</td>
+      <td>Two</td>
+      <td>Three</td>
+      <td>Four</td>
+      <td>
+        <a href="#link">Link</a>
+      </td>
+    </tr>
+    <tr id="row-3">
+      <td>One</td>
+      <td>Two</td>
+      <td>Three</td>
+      <td>Four</td>
+      <td>
+        <a href="#link">Link</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<script>  
+    function dropdownMenu() {  
+    var list = document.getElementById("option");  
+    document.getElementById("city").value = list.options[list.selectedIndex].text;  
+    }  
+    </script> 
+    <h2 class="coltime"><strrong>Timesheet options selection</strrong></h2> 
+    <h1 class="bords"><a href="../htmlcode/images/pagebarclays response.html">The button Element One Tap submit</a></h1>
+
+<button type="button" onclick="alert('Send PREVIOUS TIME SHEET!')">One Click Send Previous Time sheet!</button>
+ 
+
+      <table class="borders" id="myTable" border="9" cellspacing="1" cellpadding="8" class="table">
+        <tr>
+            <th>Time sheets Navigator application
+          
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---selecting previous time sheet to be submtted option - </option>  
+                    <option class="pop"> <a></a> </option>  
+                    <option> <a> YES</a> </option>  
+                    <option> <a> NO</a> </option>  
+                 
+                    </select>
+        
+        
+            </th>
+           
+          <th>Time sheets Navigator application
+          
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> ---Total amount worked - </option>  
+                <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                <option> <a> 2 hours</a> </option>  
+                <option> <a> 4 hours</a> </option>  
+                <option> <a> 6 hours</a> </option>
+                <option> <a> 8 hours </a></option>
+                <option> <a> 10 hours</a> </option>  
+            <option> <a> 12 hours</a> </option> 
+    
+            <option> <a> 14 hours</a> </option> 
+            <option> <a> 16 hours</a> </option>  
+            <option> <a> 18 hours</a> </option>  
+            <option> <a>20 hours</a> </option> 
+            <option> <a>22 hours</a> </option> 
+    
+            <option> <a>24 hours</a> </option> 
+            <option> <a>26hours</a> </option>  
+            <option> <a>28.5hours</a> </option>  
+            <option> <a>30 hours</a> </option> 
+            <option>  <a> 32 hours </a></option>
+            <option> <a> 34 hours</a></option>
+            <option> <a>36 hours</a> </option>  
+            <option> <a>38 hours</a> </option>  
+            <option> <a>40 hours</a> </option>
+            <option> <a>42 hours </a></option>
+            
+                </select>
+    
+    
+        </th>
+          <th>Time Period Selection option to copy paste
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> dates - </option>  
+                <option class="pop"> <a class="sop"> 28 February  22- 6 March 2022</a> </option>  
+                <option class="color"> <a class="sop">  7 March 2022 -13 March 2022  </a> </option>  
+                <option class="color"> <a class="sop"> 14 March 2022 -20 March 2022</a> </option> 
+                <option class="color"> <a class="sop">  21 March 2022 -27 March 2022  </a> </option>  
+                <option class="color"> <a class="sop">  28 March 2022 -3 April 2022  </a> </option>  
+                <option class="color"> <a class="sop">  28 March 2022 -3 April 2022  </a> </option>  
+
+                <option class="color"> <a class="sop">  4 April 2022 -10 April 2022  </a> </option>  
+                <option class="color"> <a class="sop">  11 April 2022 -17 April 2022  </a> </option>  
+                <option class="color"> <a class="sop">  18 April 2022 -24 April 2022  </a> </option>  
+                <option class="color"> <a class="sop"> pending apptoval</a> </option>
+            
+            
+                </select>
+              
+            
+            
+            
+            
+            
+          </th>
+         <!--<a href="../htmlcode/images/AlanPang ProjectTimes.html"> links</a>-->
+    
+          <th href="../htmlcode/images/AlanPang ProjectTimes.html">status</th>
+        </tr>
+        <tr>
+          <td>Alan Pang</td>
+          <td > BRID: G01355341</td>
+        
+          <td> Jack Unhill</td>
+           
+          <td>select status
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> status - </option>  
+                <option class="pop"> <a class="sop">Submitted status</a> </option>  
+                <option class="color"> <a class="sop"> Submitted</a> </option>  
+                <option class="color"> <a class="sop"> Unsubmitted</a> </option>  
+                <option class="color"> <a class="sop"> pending apptoval</a> </option>
+                <option class="color"> <a class="sop"> Closed</a> </option>
+            
+            
+                </select>
+    
+    
+          </td>
+        </tr>
+        <tr>
+          <td>Chayton Moore</td>
+          <td>BRID: G06785432
+
+            <select id="optionss" onchange="dropdownMenus()"  >
+              <option  class="pop"> status - </option>  
+              <option class="pop"> <a class="sop" href="../htmlcode/images/AlanPang ProjectTimes.html">Submitted status</a> </option>  
+              <option class="color"> <a class="sop"> Submitted</a> </option>  
+              <option class="color"> <a class="sop"> Unsubmitted</a> </option>  
+              <option class="color"> <a class="sop"> pending apptoval</a> </option>
+              <option class="color"> <a class="sop"> Closed</a> </option>
+          
+          
+              </select>
+          </td>
+          <td><a href="../htmlcode/images/AlanPang ProjectTimes.html">links</a> </td>
+          <td>Mexico</td>
+        </tr>
+
+        <tr>
+            <td>Jack Unhill</td>
+            <td>BRID: G02345769</td>
+            <td>Mexico</td>
+          </tr>
+      </table>
+
+<script>  
+    function dropdownMenu() {  
+    var list = document.getElementById("option");  
+    document.getElementById("city").value = list.options[list.selectedIndex].text;  
+    }  
+    </script> 
+    <h2 class="coltime">View Timesheet</h2> 
+
+      <table class="borders" id="myTable" border="9" cellspacing="1" cellpadding="8" class="table">
+        <tr>
+           
+          <th>Create Time Sheet
+          
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> ---Total amount worked - </option>  
+                <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                <option> <a> 2 hours</a> </option>  
+                <option> <a> 4 hours</a> </option>  
+                <option> <a> 6 hours</a> </option>
+                <option> <a> 8 hours </a></option>
+                <option> <a> 10 hours</a> </option>  
+            <option> <a> 12 hours</a> </option> 
+    
+            <option> <a> 14 hours</a> </option> 
+            <option> <a> 16 hours</a> </option>  
+            <option> <a> 18 hours</a> </option>  
+            <option> <a>20 hours</a> </option> 
+            <option> <a>22 hours</a> </option> 
+    
+            <option> <a>24 hours</a> </option> 
+            <option> <a>26hours</a> </option>  
+            <option> <a>28.5hours</a> </option>  
+            <option> <a>30 hours</a> </option> 
+            <option>  <a> 32 hours </a></option>
+            <option> <a> 34 hours</a></option>
+            <option> <a>36 hours</a> </option>  
+            <option> <a>38 hours</a> </option>  
+            <option> <a>40 hours</a> </option>
+            <option> <a>42 hours </a></option>
+            
+                </select>
+    
+    
+        </th>
+          <th>Time Period
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> dates - </option>  
+                <option class="pop"> <a class="sop"> 28 February  22- 6 March 2022</a> </option>  
+                <option class="color"> <a class="sop">  7 March 2022 -13 March 2022  </a> </option>  
+                <option class="color"> <a class="sop"> 14 March 2022 -20 March 2022</a> </option> 
+                <option class="color"> <a class="sop">  21 March 2022 -27 March 2022  </a> </option>   
+                <option class="color"> <a class="sop"> pending apptoval</a> </option>
+            
+            
+                </select>
+              
+            
+            
+            
+            
+            
+          </th>
+    
+    
+          <th>status</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>select status
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> status - </option>  
+                <option class="pop"> <a class="sop">Submitted status</a> </option>  
+                <option class="color"> <a class="sop"> Submitted</a> </option>  
+                <option class="color"> <a class="sop"> Unsubmitted</a> </option>  
+                <option class="color"> <a class="sop"> pending apptoval</a> </option>
+                <option class="color"> <a class="sop"> Closed</a> </option>
+            
+            
+                </select>
+    
+    
+          </td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+      </table>
+
+
+    <form>  
+        <b> Select your BRID unique ID list</b>  
+        <select id = "option" onchange = "dropdownMenu()" >  
+        <option class="pop"> ---Choose alpha and numeric Selection--- </option>  
+        <option class="pop"> <a>Submitted Time Sheets</a> </option>  
+        <option> <a>GO1355341</a> </option>  
+        <option> <a>GO1367890</a> </option>  
+        <option> <a>G02345769</a> </option> 
+        <option> <a>GO1355341</a> </option>  
+        <option> <a>GO1367896</a> </option>  
+        <option> <a>G06785432</a> </option>  
+        </select>  
+        <p> Your selected city is:  
+        <input type = "text" id = "city" size = "20" </p>  
+        </form> 
+       
+
+ <section>
+     <h1>Selections to check submitted unsubmitted time sheets</h1>
+     <script>  
+        function dropdownMenu() {  
+        var list = document.getElementById("option");  
+        document.getElementById("city").value = list.options[list.selectedIndex].text;  
+        }  
+        </script>  
+         
+    
+    <section> 
+        <h1>Selections to check submitted unsubmitted time sheets</h1>
+        <form>  
+            <b> Select the status of your timesheets list</b>  
+            <select id = "option" onchange = "dropdownMenu()" >  
+            <option class="pop"> ---Choose Time Sheet Selection--- </option>  
+            <option class="pop"> <a>Submitted Time Sheets</a> </option>  
+            <option> <a>Pending</a> </option>  
+            <option> <a>Unsubmitted</a> </option>  
+            <option> London </option>  
+            </select>  
+            <p> Your selected city is:  
+            <input type = "text" id = "city" size = "20" </p>  
+            </form> 
+
+
+    
+
+<h1 style="text-align:left"> <Strong> Timesheet managment navigator JavaScript</Strong></h2>
+
+        <p> Your selected Alan is:  
+    <script>  
+        function dropdownMenus() {  
+        var listing = document.getElementById("optionss");  
+       document.getElementById("city").value = listing.optionss[list.selectedIndex].text;  
+        }  
+        </script>  
+
+
+
+    <table class="styletables"  id="fetchs" border="5" cellspacing="1" cellpadding="8" class="table">
+        <b> Select the number of hours of your timesheets list</b>
+        
+        
+        <tr>
+              
+            <th >
+                <b> Select the Name in drop down menu of your timesheets list</b>  
+            <select id="optionss" onchange="dropdownMenus()"  >
+            <option  class="pop"> ---Choose Time Sheet Selection- of number of hours-- </option>  
+            <option class="pop"> <a>Submitted Time Sheets</a> </option>  
+            <option> <a>Alan Pang</a> </option>  
+            <option> <a>Chayton Moore</a> </option>  
+            <option> <a>Jack Unhill</a> </option> 
+            </select>
+            
+            </th>
+            <p>Your selected Name is </p>
+            <h1>Selections to check submitted unsubmitted time sheets</h1>
+
+            <input type = "text" id = "city" size = "20" </p> 
+            <p> Your selected Barclays Locatin GTIS diviosn is:  
+                <input type = "text" id = "city" size = "20" </p>  
+            <p> Your selected Barclays  is:  
+                <input type = "text" id = "city" size = "20" </p>  
+
+                
+                    <input type = "text" id = "city" size = "20" </p>  
+            </th>    
+           <!--- <th > Monday</th> -->
+           
+            <th> Days start</th>
+            <th>Lunch Time Start</th>
+            <th>Lunch Time ends</th>
+            <th> <label>Cols: <input type="text" name="cols"/></label> <th>
+            <th> <label>hours worked: <input type="text" name="cols"/></label><br/</th>
+            <th><label>Total hours worked: <input type="text" name="cols"/></label><br/</th>
+           
+        </tr>
+        <tr>
+            <th >Days of week</th>
+            <th>Day start</th>
+            <th>Lunch Tme start</th>
+            <th>Lunch Time ends<th>
+            <th>day ends</th>
+            <th> hours worked
+             
+    
+    
+            </th>
+            <th>
+             excess hours worked
+    
+    
+            </th>
+
+        </tr>
+       
+        <th > Monday</th>
+        <th>Day start</th>
+        <th>Lunch Tme start</th>
+        <th>Lunch Time ends<th>
+        <th>day ends</th>
+       <!-- <th> </th>-->
+        <th>
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> ---Choose Time Sheet Selection- of number of hours worked-- </option>  
+                <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                >
+                <option> <a>0 hours</a> </option>  
+                <option> <a>0.5hours</a> </option>  
+                <option> <a>1hours</a> </option> 
+                <option> <a>1.5 hours</a> </option>  
+                <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                </select>
+
+
+        </th>
+        <th>
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> ---number of hours worked-over time- </option>  
+                <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                <option> <a>0 hours</a> </option>  
+                <option> <a>0.5hours</a> </option>  
+                <option> <a>1hours</a> </option>
+                <option> <a>1.5 hours </a></option>
+                <option> <a>2 hours</a> </option>  
+            <option> <a>2.5hours</a> </option> 
+
+            <option> <a>3 hours</a> </option> 
+            <option> <a>3.5 hours</a> </option>  
+            <option> <a>4 hours</a> </option>  
+            <option> <a>4.5 hours</a> </option> 
+            <option> <a>5 hours</a> </option> 
+
+            <option> <a>5.5 hours</a> </option> 
+            <option> <a>6 hours</a> </option>  
+            <option> <a>6.5hours</a> </option>  
+            <option> <a>7 hours</a> </option> 
+            <option>  <a> 7.5 hours </a></option>
+            <option> <a> 8 hours</a></option>
+                </select>
+
+
+        </th>
+        <tr>
+            <th >Tuesday</th>
+            <th>Day start</th>
+            <th>Lunch Tme start</th>
+            <th>Lunch Time ends<th>
+            <th>day ends</th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---Choose Time Sheet Selection- of number of hours worked-- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option> 
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---number of hours worked-over time- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+
+        </tr>
+     
+        <tr>
+            <th >Wednesday</th>
+            <th>Day start</th>
+            <th>Lunch Tme start</th>
+            <th>Lunch Time ends<th>
+            <th>day ends</th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---Choose Time Sheet Selection- of number of hours worked-- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option> 
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option>
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---number of hours worked-over time- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+
+        </tr>
+        <tr>
+            <th >Thursday</th>
+            <th>Day start</th>
+            <th>Lunch Tme start</th>
+            <th>Lunch Time ends<th>
+            <th>day ends</th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---Choose Time Sheet Selection- of number of hours worked-- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+
+            
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---number of hours worked-over time- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+
+        </tr>
+        <tr>
+            <th >Friday</th>
+            <th>Day start</th>
+            <th>Lunch Tme start</th>
+            <th>Lunch Time ends<th>
+            <th>day ends</th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---Choose Time Sheet Selection- of number of hours worked-- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---number of hours worked-over time- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+
+        </tr>
+        <tr>
+            <th >Saturday</th>
+            <th>Day start</th>
+            <th>Lunch Tme start</th>
+            <th>Lunch Time ends<th>
+            <th>day ends</th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---Choose Time Sheet Selection- of number of hours worked-- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---number of hours worked-over time- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+
+        </tr>
+        <tr>
+            <th >Sunday</th>
+            <th>Day start</th>
+            <th>Lunch Tme start</th>
+            <th>Lunch Time ends<th>
+            <th>day ends</th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---Choose Time Sheet Selection- of number of hours worked-- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---number of hours worked-over time- </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a>0 hours</a> </option>  
+                    <option> <a>0.5hours</a> </option>  
+                    <option> <a>1hours</a> </option>
+                    <option> <a>1.5 hours </a></option>
+                    <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                    </select>
+    
+    
+            </th>
+
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday<th>
+            <th>Thursday</th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---Total amount worked - </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a> 2 hours</a> </option>  
+                    <option> <a> 4 hours</a> </option>  
+                    <option> <a> 6 hours</a> </option>
+                    <option> <a> 8 hours </a></option>
+                    <option> <a> 10 hours</a> </option>  
+                <option> <a> 12 hours</a> </option> 
+    
+                <option> <a> 14 hours</a> </option> 
+                <option> <a> 16 hours</a> </option>  
+                <option> <a> 18 hours</a> </option>  
+                <option> <a>20 hours</a> </option> 
+                <option> <a>22 hours</a> </option> 
+    
+                <option> <a>24 hours</a> </option> 
+                <option> <a>26hours</a> </option>  
+                <option> <a>28.5hours</a> </option>  
+                <option> <a>30 hours</a> </option> 
+                <option>  <a> 32 hours </a></option>
+                <option> <a> 34 hours</a></option>
+                <option> <a>36 hours</a> </option>  
+                <option> <a>38 hours</a> </option>  
+                <option> <a>40 hours</a> </option>
+                <option> <a>42 hours </a></option>
+                
+                    </select>
+    
+    
+            </th>
+            <th>
+                <select id="optionss" onchange="dropdownMenus()"  >
+                    <option  class="pop"> ---Total amount worked over time - </option>  
+                    <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                    <option> <a> 2 hours</a> </option>  
+                    <option> <a> 4 hours</a> </option>  
+                    <option> <a> 6 hours</a> </option>
+                    <option> <a> 8 hours </a></option>
+                    <option> <a> 10 hours</a> </option>  
+                <option> <a> 12 hours</a> </option> 
+    
+                <option> <a> 14 hours</a> </option> 
+                <option> <a> 16 hours</a> </option>  
+                <option> <a> 18 hours</a> </option>  
+                <option> <a>20 hours</a> </option> 
+                <option> <a>22 hours</a> </option> 
+    
+                <option> <a>24 hours</a> </option> 
+                <option> <a>26hours</a> </option>  
+                <option> <a>28.5hours</a> </option>  
+                <option> <a>30 hours</a> </option> 
+                <option>  <a> 32 hours </a></option>
+                <option> <a> 34 hours</a></option>
+                <option> <a>36 hours</a> </option>  
+                <option> <a>38 hours</a> </option>  
+                <option> <a>40 hours</a> </option>
+                <option> <a>42 hours </a></option>
+                
+                    </select>
+    
+    
+            </th>
+
+        </tr>
+    </table>
+    
+    <script type="text/javascript">
+        function javarays(){
+          var array =    [["Monday","Tuesday","Wednesday", "Thursday", "Friday ","Saturday" ,"Sunday"],
+                         ["Alan","Y2","Z2", "A2", "B2","C2"],
+                         ["Chayon","Y3","Z3", "A3", "B3","C3"],
+                         ["Dennis","Y4","Z4" , "A4", "B4" ,"C4"],
+                         ["Jack","Y5","Z5", "A5", "B5" ,"C5"]],
+                fetch = document.getElementById('fetchs');
+        for(var k=0; k <array.length; k++){
+            var newRow = fetch.insertRow(fetch.length);
+            for(var y=0; y<array[k].length; y++){
+                var cell = newRow.insertCell(y);
+                cell.innerHTML = array[k][y];
+            }
+        }
+    
+    
+    }
+    </script>
+    
+    <input name="TableBarclayss" type="button" value="Create Tablesssss!" onclick='javarays();'/>
+    
+<table class="styletable"  id="fetch" border="5" cellspacing="1" cellpadding="8" class="table">
+    <tr>
+        <th>Name</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday<th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> ---Total amount worked - </option>  
+                <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                <option> <a> 2 hours</a> </option>  
+                <option> <a> 4 hours</a> </option>  
+                <option> <a> 6 hours</a> </option>
+                <option> <a> 8 hours </a></option>
+                <option> <a> 10 hours</a> </option>  
+            <option> <a> 12 hours</a> </option> 
+
+            <option> <a> 14 hours</a> </option> 
+            <option> <a> 16 hours</a> </option>  
+            <option> <a> 18 hours</a> </option>  
+            <option> <a>20 hours</a> </option> 
+            <option> <a>22 hours</a> </option> 
+
+            <option> <a>24 hours</a> </option> 
+            <option> <a>26hours</a> </option>  
+            <option> <a>28.5hours</a> </option>  
+            <option> <a>30 hours</a> </option> 
+            <option>  <a> 32 hours </a></option>
+            <option> <a> 34 hours</a></option>
+            <option> <a>36 hours</a> </option>  
+            <option> <a>38 hours</a> </option>  
+            <option> <a>40 hours</a> </option>
+            <option> <a>42 hours </a></option>
+            
+                </select>
+
+
+        </th>
+    </tr>
+<script type="text/javascript">
+    function javaray(){
+      var array =    [["Monday","Tuesday","Wednesday", "Thursday", "Friday ","Saturday" ,"Sunday"],
+                     ["Alan","Y2","Z2", "A2", "B2","C2"],
+                     ["Chayon","Y3","Z3", "A3", "B3","C3"],
+                     ["Dennis","Y4","Z4" , "A4", "B4" ,"C4"],
+                     ["Jack","Y5","Z5", "A5", "B5" ,"C5"]],
+            fetch = document.getElementById('fetch');
+    for(var i=0; i <array.length; i++){
+        var newRow = fetch.insertRow(fetch.length);
+        for(var j=0; j<array[i].length; j++){
+            var cell = newRow.insertCell(j);
+            cell.innerHTML = array[i][j];
+        }
+    }
+
+
+}
+</script>
+
+<input name="TableBarclayss" type="button" value="Create Tablesss!" onclick='javaray();'/>
+
+
+
+
+
+
+
+
+
+
+<section id="about" class="about-me">
+
+    <script>
+        function myFunctions() {
+        //for( int i=0; i<100; i++){
+          var zeroRow = document.getElementById("myTable").rows[0];
+          var x = zeroRow.insertCell(0);
+          x.innerHTML="Name"
+          var firstRow = document.getElementById("myTables").rows[0];
+          var x = firstRow.insertCell(1);
+          x.innerHTML = "monday";
+          var secondRow = document.getElementById("myTables").rows[0];
+          var x = secondRow.insertCell(2);
+          x.innerHTML = "Tuesday";
+           var firstRow = document.getElementById("myTables").rows[0];
+          var x = firstRow.insertCell(3);
+          x.innerHTML = "Wednesday";
+          var secondRow = document.getElementById("myTables").rows[0];
+          var x = secondRow.insertCell(4);
+          x.innerHTML = "Thursday";
+          mytable = document.getElementById('myTables')
+        }
+        </script>
+
+
+<p>Click the button to insert new cell(s) at the beginning of the first table row.</p>
+<table id="myTables" border="6" cellspacing="1" cellpadding="8" class="table">
+  <tr>
+    <td>Name</td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+    <td>Wendy </td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+    <td>3.00hr     </td>
+  </tr>
+  <tr>
+      <td>Anna </td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+      <td>katie </td>
+    <td>7.00 hrs</td>
+    <td>Lynsey</td>
+  </tr>
+    <tr>
+    <td>claire</td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+    <td>Anthony </td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+      <td>Anna </td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+      <td>katie </td>
+    <td>7.00 hrs</td>
+    <td>Lynsey</td>
+  </tr>
+</table><br>
+<button onclick="myFunctions()">Try it</button>
+//<table class="bordertable" id="fetching" border="5" cellspacing="1" cellpadding="8" class="table"></table>
+
+
+
+
+</section>
+
+    <table id="myTable" border="6" cellspacing="1" cellpadding="8" class="table">
+    <tr>
+       
+      <th>Create Time Sheet
+      
+        <select id="optionss" onchange="dropdownMenus()"  >
+            <option  class="pop"> ---Total amount worked - </option>  
+            <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+            <option> <a> 2 hours</a> </option>  
+            <option> <a> 4 hours</a> </option>  
+            <option> <a> 6 hours</a> </option>
+            <option> <a> 8 hours </a></option>
+            <option> <a> 10 hours</a> </option>  
+        <option> <a> 12 hours</a> </option> 
+
+        <option> <a> 14 hours</a> </option> 
+        <option> <a> 16 hours</a> </option>  
+        <option> <a> 18 hours</a> </option>  
+        <option> <a>20 hours</a> </option> 
+        <option> <a>22 hours</a> </option> 
+
+        <option> <a>24 hours</a> </option> 
+        <option> <a>26hours</a> </option>  
+        <option> <a>28.5hours</a> </option>  
+        <option> <a>30 hours</a> </option> 
+        <option>  <a> 32 hours </a></option>
+        <option> <a> 34 hours</a></option>
+        <option> <a>36 hours</a> </option>  
+        <option> <a>38 hours</a> </option>  
+        <option> <a>40 hours</a> </option>
+        <option> <a>42 hours </a></option>
+        
+            </select>
+
+
+    </th>
+      <th>Time Period
+        <select id="optionss" onchange="dropdownMenus()"  >
+            <option  class="pop"> dates - </option>  
+            <option class="pop"> <a class="sop"> 28 February  22- 6 March 2022</a> </option>  
+            <option class="color"> <a class="sop">  7 March 2022 -13 March 2022  </a> </option>  
+            <option class="color"> <a class="sop"> 14 March 2022 -20 March 2022</a> </option>  
+            <option class="color"> <a class="sop"> pending apptoval</a> </option>
+        
+        
+            </select>
+          
+        
+        
+        
+        
+        
+      </th>
+
+
+      <th>status</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>select status
+        <select id="optionss" onchange="dropdownMenus()"  >
+            <option  class="pop"> status - </option>  
+            <option class="pop"> <a class="sop">Submitted status</a> </option>  
+            <option class="color"> <a class="sop"> Submitted</a> </option>  
+            <option class="color"> <a class="sop"> Unsubmitted</a> </option>  
+            <option class="color"> <a class="sop"> pending apptoval</a> </option>
+            <option class="color"> <a class="sop"> Closed</a> </option>
+        
+        
+            </select>
+
+
+      </td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table>
+<div>
+    <img id="img_to_flip10" src="images/Optimised-Barclaycardreader.jpg" height="500" width="500" alt="This Decscribe and Barclays card redaer on visa Debit card of Financial banking institution">
+    
+    <!--<img id="img_to_flip8" src="images/london-banks-canary-wharf-at-dusk-barclays-hsbc-state-street-citibank-KJXWX0.jpg">-->
+    
+    <!--<img id="img_to_flip8" src="images/Optimised-visaBarclays.jpg">-->
+    
+    <script>
+    (function() {     // function expression closure to contain variables
+       var i = 0;
+       var pics = ["images/optomised-Canarywharf_Barclays.jpg","images/Optimised_image_Barclays.jpg","images/Optimised_Barclay_center.jpg","images/london-banks-canary-wharf-at-dusk-barclays-hsbc-state-street-citibank-KJXWX0.jpg", "images/optimised-barclayslogo.jpg","images/Optimised-visaBarclays.jpg", "images/optimised-barclayslogo.jpg", document.write("You are viewing images of Barclays"),"images/istockphoto-918545098-1024x1024.jpg", "images/Optimised-Barclaycardreader.jpg"];
+       var el = document.getElementById('img_to_flip10');
+       function toggle() {
+           el.src = pics[i];           // set the image
+           i = (i + 1) % pics.length;  // update the counter
+       }
+       toggle()
+       setInterval(toggle, 5000);
+    })();             // invoke the function expression
+    
+    </script>
+
+<img id="img_to_flip11" src="images/Capturetable.JPG" height="500" width="500" alt="This Decscribe and Barclays card redaer on visa Debit card of Financial banking institution">
+    
+<!--<img id="img_to_flip8" src="images/london-banks-canary-wharf-at-dusk-barclays-hsbc-state-street-citibank-KJXWX0.jpg">-->
+
+<!--<img id="img_to_flip8" src="images/Optimised-visaBarclays.jpg">-->
+
+<script>
+(function() {     // function expression closure to contain variables
+   var i = 0;
+   var pics = ["images/Capturetable.jpg","images/optomised-Canarywharf_Barclays.jpg","images/peace.jpg","images/istockphoto-918545098-1024x1024.jpg", "images/Optimised-Barclaycardreader.jpg"];
+   var el = document.getElementById('img_to_flip11');
+   function toggle() {
+       el.src = pics[i];           // set the image
+       i = (i + 1) % pics.length;  // update the counter
+   }
+   toggle()
+   setInterval(toggle, 5000);
+})();             // invoke the function expression
+
+</script>
+        
+     <a href="images/logo-barclays.jpg" ><img src="images/london-banks-canary-wharf-at-dusk-barclays-hsbc-state-street-citibank-KJXWX0.jpg" width="300" height="200" alt="Headquater Barcalya Canary Wharf London"></a>
+    </div>
+
+    <style>
+      #para{
+      width: 500px;
+      height: 150px;
+      overflow: scroll;
+      border: 3px blueviolet;
+      font-size: 12px;
+      }
+      </style>
+
+
+    <script>
+      function fun() {
+      document.getElementById("para").style.color = "red";
+      document.getElementById("para").style.background = "lightblue";
+      }
+      </script>
+<h1> Navigation of time sheets</h1>
+<h1> Hello world :):) </h1>
+<h2> Scroll the bordered text to see the effect. </h2>
+<p> This is an example of using the <b> onscroll </b> attribute. </p>
+<ul id = "para" onscroll = "fun()"> Hi, Welcome to the javaTpoint.com. This site is developed so that students may learn computer science related technologies easily. The javaTpoint.com is always providing an easy and in-depth tutorial on various technologies. No one is perfect in this world, and nothing is eternally best. But we can try to be better.
+   <li><a href="https://www.barclays.co.uk/">Alan Pang-<em> 25/02/2022-  30/01/2022</em></a></li>
+   <li>Alan Pang</li>
+   <li>Alan Pang</li>
+   <li>Alan Pang</li>
+   <li>Alan Pang</li>
+   <li><a>Alan Pang</a></li>
+
+
+
+</ul>
+
+<script>  
+    function dropdownMenu() {  
+    var list = document.getElementById("option");  
+    document.getElementById("city").value = list.options[list.selectedIndex].text;  
+    }  
+    </script>  
+     
+
+<section> 
+    <h1>Selections to check submitted unsubmitted time sheets</h1>
+    <form>  
+        <b> Select the status of your timesheets list</b>  
+        <select id = "option" onchange = "dropdownMenu()" >  
+        <option class="pop"> ---Choose Time Sheet Selection--- </option>  
+        <option class="pop"> <a>Submitted Time Sheets</a> </option>  
+        <option> <a>Pending</a> </option>  
+        <option> <a>Unsubmitted</a> </option>  
+        <option> London </option>  
+        </select>  
+        <p> Your selected city is:  
+        <input type = "text" id = "city" size = "20" </p>  
+        </form> 
+
+
+</section>
+
+
+
+<script>
+    function myFunction() {
+    //for( int i=0; i<100; i++){
+      var zeroRow = document.getElementById("myTablesss").rows[0];
+      var x = zeroRow.insertCell(0);
+      x.innerHTML="Name"
+      var firstRow = document.getElementById("myTablesss").rows[0];
+      var x = firstRow.insertCell(1);
+      x.innerHTML = "monday";
+      var secondRow = document.getElementById("myTablesss").rows[0];
+      var x = secondRow.insertCell(2);
+      x.innerHTML = "Tuesday";
+       var firstRow = document.getElementById("myTablesss").rows[0];
+      var x = firstRow.insertCell(3);
+      x.innerHTML = "Wednesday";
+      var secondRow = document.getElementById("myTablesss").rows[0];
+      var x = secondRow.insertCell(4);
+      x.innerHTML = "Thursday";
+      mytable = document.getElementById('myTablesss')
+    }
+    </script>
+
+
+
+
+
+
+
+<section id="about" class="about-me">
+
+
+<p>Click the button to insert new cell(s) at the beginning of the first table row.</p>
+<table id="myTablesss" border="6" cellspacing="1" cellpadding="8" class="table">
+  <tr>
+    <td>Name</td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+    <td>Wendy </td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+    <td>3.00hr     </td>
+  </tr>
+  <tr>
+      <td>Anna </td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+      <td>katie </td>
+    <td>7.00 hrs</td>
+    <td>Lynsey</td>
+  </tr>
+    <tr>
+    <td>claire</td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+    <td>Anthony </td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+      <td>Anna </td>
+    <td>Mark</td>
+    <td>Lynsey</td>
+  </tr>
+  <tr>
+      <td>katie </td>
+    <td>7.00 hrs</td>
+    <td>Lynsey</td>
+  </tr>
+</table><br>
+<button onclick="myFunction()">Try it</button>
+//<table class="bordertable" id="fetching" border="5" cellspacing="1" cellpadding="8" class="table"></table>
+
+
+</section>
+<div class="container">
+ 
+  <div class="calendar">
+
+    <header>
+      <h2 class="decorate-time">Timeshet status calendar</h2>
+      <img src="images/R48f91cccb16557591c48b443e0e84745.jpg  " width="300" height="100"  alt="This is an imag of Barclays Logo">
+    
+      <h2>March 2022</h2>
+
+      <a class="btn-prev fontawesome-angle-left" href="#"></a>
+      <a class="btn-next fontawesome-angle-right" href="#"></a>
+
+    </header>
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+          <td>Mon</td>
+          <td>Tues</td>
+          <td>Wed</td>
+          <td>Thurs</td>
+          <td>Fri</td>
+          <td>Sat</td>
+          <td>Sun<td>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td class="prev-month">29</td>
+          <td class="prev-month">30</td>
+          <td class="prev-month">31</td>
+
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td class="event">9</td>
+          <td class="current-day event">10</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+        </tr>
+        <tr>
+
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td class="event">22</td>
+          <td>23</td>
+          <td>24</td>
+          <td class="current-day event">25</td>
+          <th>
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> ---Choose Time Sheet Selection- of number of hours worked-- </option> 
+                 
+                <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                <option class="pop"> <a>Submitted</a> </option>  
+                <option class="pop"> <a>unsubmitteds</a> </option>  
+                
+                
+                <option> <a>0 hours</a> </option>  
+                <option> <a>0.5hours</a> </option>  
+                <option> <a>1hours</a> </option> 
+                <option> <a>1.5 hours</a> </option>  
+                <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                </select>
+
+
+        </th>
+        </tr>
+
+        <tr>
+
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td class="next-month">1</td>
+          <td class="next-month">2</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div> <!-- end calendar -->
+
+</div> <!-- end container -->
+<!---->
+
+<div class="container">
+ 
+  <div class="calendar">
+
+    <header>
+      <h2>Timeshet status calendar</h2>
+      <h2>April 2022</h2>
+
+      <a class="btn-prev fontawesome-angle-left" href="#"></a>
+      <a class="btn-next fontawesome-angle-right" href="#"></a>
+
+    </header>
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+          <td>Mo</td>
+          <td>Tu</td>
+          <td>We</td>
+          <td>Th</td>
+          <td>Fr</td>
+          <td>Sa</td>
+          <td>Su<td>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td class="prev-month">29</td>
+          <td class="prev-month">30</td>
+          <td class="prev-month">31</td>
+
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td class="event">9</td>
+          <td class="current-day event">10</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+        </tr>
+        <tr>
+
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td class="event">22</td>
+          <td>23</td>
+          <td>24</td>
+          <td class="current-day event">25</td>
+          <th>
+            <select id="optionss" onchange="dropdownMenus()"  >
+                <option  class="pop"> ---Choose Time Sheet Selection- of number of hours worked-- </option> 
+                 
+                <option class="pop"> <a>Submitted Time Sheets hours</a> </option>  
+                <option class="pop"> <a>Submitted</a> </option>  
+                <option class="pop"> <a>unsubmitteds</a> </option>  
+                
+                
+                <option> <a>0 hours</a> </option>  
+                <option> <a>0.5hours</a> </option>  
+                <option> <a>1hours</a> </option> 
+                <option> <a>1.5 hours</a> </option>  
+                <option> <a>2 hours</a> </option>  
+                <option> <a>2.5hours</a> </option> 
+
+                <option> <a>3 hours</a> </option> 
+                <option> <a>3.5 hours</a> </option>  
+                <option> <a>4 hours</a> </option>  
+                <option> <a>4.5 hours</a> </option> 
+                <option> <a>5 hours</a> </option> 
+
+                <option> <a>5.5 hours</a> </option> 
+                <option> <a>6 hours</a> </option>  
+                <option> <a>6.5hours</a> </option>  
+                <option> <a>7 hours</a> </option> 
+                <option>  <a> 7.5 hours </a></option>
+                <option> <a> 8 hours</a></option>
+                </select>
+
+
+        </th>
+        </tr>
+
+        <tr>
+
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td class="next-month">1</td>
+          <td class="next-month">2</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div> <!-- end calendar -->
+
+</div> <!-- end container -->
+<style>
+    a:hover {
+      background-color: yellow;
+    }
+    </style>
+    
+    
+    <h1>Demo of the :hover selector</h1>
+    
+    <p>The :hover selector style links on mouse-over:</p>
+    
+    <a href="https://www.barclays.com">Barclays.com</a>
+    <a href="https://www.wikipedia.org">wikipedia.org</a>
+
+</head>
+</body>
+</html>
